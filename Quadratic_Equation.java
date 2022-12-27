@@ -66,7 +66,25 @@ public class Main {
 		double FinalResultMinus=FinalResultMinus(MinusB,SquareRoot,BottomHalfResult);
 		
 		out.println("X1= "+FinalResultPlus);
+		
+		
+		if(FinalResultPlus!=(int)FinalResultPlus) {
+			out.println();
+			out.println("X1 Fraction= ");
+			out.println(MinusB+SquareRoot);
+			out.println("---");
+			out.println(BottomHalfResult);
+			out.println();
+		}
 		out.println("X2= "+FinalResultMinus);
+		out.println();
+		
+		if(FinalResultMinus!=(int)FinalResultMinus) {
+			out.println("X2 Fraction= ");
+			out.println(MinusB-SquareRoot);
+			out.println("---");
+			out.println(BottomHalfResult);
+		}
 		out.println("Made By Idan Less");
 	}
 	
